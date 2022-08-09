@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show/Hide</title>
+
+<script>
+function hideDiv(elementId)
+{
+	let d = document.getElementById(elementId);
+	d.style.display="none";
+}
+function showDiv(elementId)
+{
+	let d = document.getElementById(elementId);
+	d.style.display="block";
+}
+</script>
+
+</head>
+<body>
+
+<div id="div_hospital" style="width: 200px;height:200px;background-color: powderblue; display:none">
+This is hospital division.
+</div>
+
+<button onclick="hideDiv('div_hospital')">Hide</button>
+<button onclick="showDiv('div_hospital')">Show</button>
+</body>
+</html>

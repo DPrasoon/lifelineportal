@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ChangeImage</title>
+<!-- using JS -->
+
+<script>
+	const imageArr = [ "bloodtypes.png", "camp.jpg", "impact.png" ]
+	const colors = [ "red", "blue", "green" ]
+	var index = 0
+	function changeImage() {
+		document.getElementById("img1").src = "/lifelineportal/images/"
+				+ imageArr[index]
+		document.getElementById("msg").style.color = colors[index];
+		index++
+		if (index > (imageArr.length - 1)) {
+			index = 0
+		}
+
+		setTimeout(changeImage, 3000)
+	}
+</script>
+</head>
+<body onload="changeImage()">
+	<h1 id="msg">World Of Colors</h1>
+	<img src="/lifelineportal/images/lifeline.png"
+		style="width: 600px; height: 400px; margin-left: 500px" id="img1">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mouse Event</title>
+<script>
+	function changeImage() {
+		let x = document.getElementById("img1")
+
+		x.src = "/lifelineportal/images/giveandsave.png"
+
+	}
+	function changeAgain(){
+		let x =document.getElementById("img1")
+		x.src="/lifelineportal/images/bloodtypes.png"
+	}
+</script>
+
+</head>
+<body>
+
+	<img src="/lifelineportal/images/bloodtypes.png" id="img1"
+		style="width: 400px; height: 400px" onmouseover="changeImage()"
+		onmouseout="changeAgain()">
+
+</body>
+</html>

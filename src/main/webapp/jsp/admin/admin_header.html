@@ -1,0 +1,84 @@
+<style>
+.nav-link {
+	color: white !important;
+	font-size: 20px;
+	font-family: Monotype, sans;
+}
+
+a:hover {
+	color: #ef233c !important;
+}
+
+/* this is for dropdown */
+.dropdown-item {
+	color: orange !important;
+}
+
+.navbar {
+	background-color: #2b2d42 !important
+}
+</style>
+
+<div class="container-fluid" style="background-color: #ba181b">
+	<h2 style="color: white; text-align: center; font-family: Georgia"
+		class="mb-0" id="header">Admin Home</h2>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand"
+			style="color: #e5383b !important; font-family: Georgia;" href="/lifelineportal/jsp/index.jsp">LifeLine</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="/lifelineportal/jsp/admin/admin_home.jsp">Home</a></li>
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Queries </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/viewqueries.jsp">View</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/deletequeries.jsp">Delete</a></li>
+					</ul></li>
+					
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Feedback </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/viewfeedback.jsp">View</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/deletefeedback.jsp">Delete</a></li>
+					</ul></li>
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Donors </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/viewdonors.jsp">View</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/deletedonors.jsp">Delete</a></li>
+					</ul></li>
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Event </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/lifelineportal/jsp/admin/addevents.jsp">Add</a></li>
+					</ul></li>
+
+			</ul>
+
+			<div class="nav-item"><a class="nav-link active"
+					aria-current="page" href="/lifelineportal/Admin_LogOut">Logout</a></div>
+
+		</div>
+	</div>
+</nav>
